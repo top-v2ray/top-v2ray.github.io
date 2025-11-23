@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+    	<link rel="canonical" href="https://top-v2ray.github.io/news/article-178829.htm" />
+	<title>华硕路由器上V2Ray配置全攻略：安全上网的实用指南</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="/assets/website/img/clashgithub/favicon.ico" type="image/x-icon"/>
+		<meta name="description" content="随着互联网的不断发展，网络安全与隐私保护日益受到重视。尤其是在信息交流频繁、内容多样的现代网络环境中，如何有效突破地域限制、保护个人隐私，成为许多用户关注的焦点。V2Ray作为一款强大且灵活的网络代理" />
+	
+    <meta name="author" content="顶级Clash节点 梯子中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://top-v2ray.github.io/news/article-178829.htm" />
+    <meta property="og:site_name" content="顶级Clash节点 梯子中文网" />
+    <meta property="og:title" content="华硕路由器上V2Ray配置全攻略：安全上网的实用指南" />
+    <meta property="og:image" content="https://top-v2ray.github.io/uploads/20240228/dcf34dc84fbab448f7946e41c45555d6.webp" />
+        <meta property="og:release_date" content="2025-11-17T19:23:14" />
+    <meta property="og:updated_time" content="2025-11-17T19:23:14" />
+        <meta property="og:description" content="随着互联网的不断发展，网络安全与隐私保护日益受到重视。尤其是在信息交流频繁、内容多样的现代网络环境中，如何有效突破地域限制、保护个人隐私，成为许多用户关注的焦点。V2Ray作为一款强大且灵活的网络代理" />
+    
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="华硕路由器上V2Ray配置全攻略：安全上网的实用指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<link href="/assets/website/css/clashgithub/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/assets/website/css/clashgithub/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="/assets/website/css/G.css" />
+	<!-- js -->
+	<script type="text/javascript" src="/assets/website/js/frontend/clashgithub/jquery-2.1.4.min.js"></script>
+	<!-- //js -->
+	<link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSFHB0NNBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DSFHB0NNBK');
+</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- header -->
+	<div class="header" id="ban">
+		<div class="container">
+			<div class="w3ls_logo">
+								<a href="/">顶级V2ray节点 机场推荐</a>
+							</div>
+			<div class="header_right">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="link-effect-7" id="link-effect-7">
+						<ul class="nav navbar-nav">
+														<li><a href="/">首页</a></li>
+														<li><a href="/paid-subscribe/">推荐机场</a></li>
+														<li><a href="/news/">新闻资讯</a></li>
+														<li><a href="/client.htm">客户端</a></li>
+													</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <h1 style="word-break: break-all;">华硕路由器上V2Ray配置全攻略：安全上网的实用指南</h1>
+            <ul>
+                <li><a href="/">首页</a><i>|</i></li>
+                <li><a href="/news/">新闻资讯</a><i>|</i></li>
+                <li>正文</li>
+            </ul>
+        </div>
+    </div>
+    <!-- //about -->
+    <!-- single -->
+    <div class="single">
+        <div class="container">
+            <div class="col-md-9">
+                <input type="hidden" id="share-website-info" data-name="Clash Node免费节点站" data-url="https://clashnode.github.io">
+<div class="xcblog-blog-detail xcblog-blog-detail-defined">
+    
+<p data-start="30" data-end="210">随着互联网的不断发展，网络安全与隐私保护日益受到重视。尤其是在信息交流频繁、内容多样的现代网络环境中，如何有效突破地域限制、保护个人隐私，成为许多用户关注的焦点。V2Ray作为一款强大且灵活的网络代理工具，因其多协议支持和出色的隐私保护能力，逐渐成为广大用户的首选方案。而华硕路由器凭借其强劲的硬件性能和丰富的固件扩展选项，也为V2Ray的部署提供了良好平台。</p>
+<p data-start="212" data-end="307">本文将从基础知识讲起，详细介绍如何在华硕路由器上安装并配置V2Ray，帮助用户打造一个安全、自由的网络环境。无论你是技术小白还是有一定经验的网络爱好者，本文都会为你提供系统且易于操作的指导。</p>
+<hr data-start="309" data-end="312">
+<h2 data-start="314" data-end="336">一、认识V2Ray：突破网络限制的利器</h2>
+<p data-start="338" data-end="462">V2Ray是一个开源的网络代理软件，设计初衷是提供灵活且安全的网络访问方案。它支持多种传输协议和混淆方式，可以有效隐藏用户的真实IP地址，防止数据被窃取或监控。相比传统VPN，V2Ray在配置灵活性和抗封锁能力上有显著优势，适用于多样化的网络环境。</p>
+<h3 data-start="464" data-end="481">V2Ray的核心功能包括：</h3>
+<ul data-start="483" data-end="687">
+<li data-start="483" data-end="528">
+<p data-start="485" data-end="528"><strong data-start="485" data-end="494">多协议支持</strong>：如VMess、Shadowsocks、Socks等，满足不同需求。</p>
+</li>
+<li data-start="529" data-end="581">
+<p data-start="531" data-end="581"><strong data-start="531" data-end="541">多种传输方式</strong>：TCP、WebSocket、mKCP、HTTP/2等，可针对网络环境灵活选择。</p>
+</li>
+<li data-start="582" data-end="610">
+<p data-start="584" data-end="610"><strong data-start="584" data-end="595">流量混淆与伪装</strong>：增强隐蔽性，降低被检测风险。</p>
+</li>
+<li data-start="611" data-end="644">
+<p data-start="613" data-end="644"><strong data-start="613" data-end="624">路由规则自定义</strong>：根据目标地址或应用，灵活分流网络流量。</p>
+</li>
+<li data-start="645" data-end="687">
+<p data-start="647" data-end="687"><strong data-start="647" data-end="656">跨平台兼容</strong>：支持Windows、macOS、Linux及部分路由器固件。</p>
+</li>
+</ul>
+<hr data-start="689" data-end="692">
+<h2 data-start="694" data-end="710">二、华硕路由器的优势及适配</h2>
+<p data-start="712" data-end="851">华硕路由器以其高性能和稳定性著称，广泛应用于家庭和企业网络。特别是支持第三方固件如Merlin和OpenWrt的型号，为安装V2Ray提供了完美环境。通过这些固件，可以轻松安装V2Ray插件，直接在路由器级别实现代理功能，无需在每台设备上单独配置，大大提升管理便利性和网络安全。</p>
+<hr data-start="853" data-end="856">
+<h2 data-start="858" data-end="876">三、准备工作：配置前的必备条件</h2>
+<p data-start="878" data-end="900">在开始配置之前，用户需确认以下几项准备工作：</p>
+<ol data-start="902" data-end="1122">
+<li data-start="902" data-end="963">
+<p data-start="905" data-end="963"><strong data-start="905" data-end="917">路由器型号兼容性</strong><br data-start="917" data-end="920">
+确保你的华硕路由器支持第三方固件及V2Ray插件（如Merlin固件支持列表）。</p>
+</li>
+<li data-start="965" data-end="1005">
+<p data-start="968" data-end="1005"><strong data-start="968" data-end="979">路由器管理权限</strong><br data-start="979" data-end="982">
+需要具备访问路由器管理后台的管理员权限。</p>
+</li>
+<li data-start="1007" data-end="1077">
+<p data-start="1010" data-end="1077"><strong data-start="1010" data-end="1024">V2Ray服务器信息</strong><br data-start="1024" data-end="1027">
+包括服务器地址、端口、用户ID（UUID）、加密方式等。这些信息由V2Ray服务器提供方提供。</p>
+</li>
+<li data-start="1079" data-end="1122">
+<p data-start="1082" data-end="1122"><strong data-start="1082" data-end="1093">稳定的网络环境</strong><br data-start="1093" data-end="1096">
+确保路由器连接的网络稳定且能够访问外部服务器。</p>
+</li>
+</ol>
+<hr data-start="1124" data-end="1127">
+<h2 data-start="1129" data-end="1147">四、安装V2Ray插件步骤详解</h2>
+<h3 data-start="1149" data-end="1167">1. 登录华硕路由器管理界面</h3>
+<ul data-start="1169" data-end="1242">
+<li data-start="1169" data-end="1221">
+<p data-start="1171" data-end="1221">打开浏览器，输入默认网关IP地址（常见为<code data-start="1191" data-end="1204">192.168.1.1</code>或<code data-start="1205" data-end="1219">192.168.50.1</code>）。</p>
+</li>
+<li data-start="1222" data-end="1242">
+<p data-start="1224" data-end="1242">输入管理员账户及密码，进入管理面板。</p>
+</li>
+</ul>
+<h3 data-start="1244" data-end="1257">2. 访问插件市场</h3>
+<ul data-start="1259" data-end="1315">
+<li data-start="1259" data-end="1289">
+<p data-start="1261" data-end="1289">在管理界面左侧菜单中找到“系统工具”或“插件管理”选项。</p>
+</li>
+<li data-start="1290" data-end="1315">
+<p data-start="1292" data-end="1315">进入“插件市场”，在搜索框输入“V2Ray”。</p>
+</li>
+</ul>
+<h3 data-start="1317" data-end="1336">3. 下载并安装V2Ray插件</h3>
+<ul data-start="1338" data-end="1384">
+<li data-start="1338" data-end="1365">
+<p data-start="1340" data-end="1365">选择官方或经过认证的V2Ray插件，点击“下载”。</p>
+</li>
+<li data-start="1366" data-end="1384">
+<p data-start="1368" data-end="1384">安装完成后，路由器可能提示重启。</p>
+</li>
+</ul>
+<h3 data-start="1386" data-end="1398">4. 重启路由器</h3>
+<ul data-start="1400" data-end="1435">
+<li data-start="1400" data-end="1435">
+<p data-start="1402" data-end="1435">选择管理界面的“系统管理”或“重启”选项，重启路由器以使插件生效。</p>
+</li>
+</ul>
+<hr data-start="1437" data-end="1440">
+<h2 data-start="1442" data-end="1458">五、配置V2Ray代理服务</h2>
+<h3 data-start="1460" data-end="1478">1. 进入V2Ray设置界面</h3>
+<ul data-start="1480" data-end="1528">
+<li data-start="1480" data-end="1498">
+<p data-start="1482" data-end="1498">路由器重启后，重新登录管理界面。</p>
+</li>
+<li data-start="1499" data-end="1528">
+<p data-start="1501" data-end="1528">在“服务”或“插件”菜单中找到“V2Ray”配置入口。</p>
+</li>
+</ul>
+<h3 data-start="1530" data-end="1544">2. 输入服务器信息</h3>
+<ul data-start="1546" data-end="1648">
+<li data-start="1546" data-end="1563">
+<p data-start="1548" data-end="1563">填写服务器地址（IP或域名）。</p>
+</li>
+<li data-start="1564" data-end="1575">
+<p data-start="1566" data-end="1575">输入服务器端口号。</p>
+</li>
+<li data-start="1576" data-end="1601">
+<p data-start="1578" data-end="1601">输入用户ID（UUID），确保与服务器端匹配。</p>
+</li>
+<li data-start="1602" data-end="1648">
+<p data-start="1604" data-end="1648">选择传输协议（TCP、WebSocket等），并根据需要配置额外参数如路径（Path）。</p>
+</li>
+</ul>
+<h3 data-start="1650" data-end="1663">3. 设置路由规则</h3>
+<ul data-start="1665" data-end="1777">
+<li data-start="1665" data-end="1744">
+<p data-start="1667" data-end="1685">根据个人需求，自定义分流规则，例如：</p>
+<ul data-start="1688" data-end="1744">
+<li data-start="1688" data-end="1705">
+<p data-start="1690" data-end="1705">将所有流量通过V2Ray代理；</p>
+</li>
+<li data-start="1708" data-end="1723">
+<p data-start="1710" data-end="1723">只代理指定应用或目标网站；</p>
+</li>
+<li data-start="1726" data-end="1744">
+<p data-start="1728" data-end="1744">设置直连和代理的白名单/黑名单。</p>
+</li>
+</ul>
+</li>
+<li data-start="1745" data-end="1777">
+<p data-start="1747" data-end="1777">路由规则灵活配置可以有效提高网络速度，减少不必要的代理开销。</p>
+</li>
+</ul>
+<h3 data-start="1779" data-end="1796">4. 保存配置并重启路由器</h3>
+<ul data-start="1798" data-end="1831">
+<li data-start="1798" data-end="1815">
+<p data-start="1800" data-end="1815">确认所有参数无误后，点击保存。</p>
+</li>
+<li data-start="1816" data-end="1831">
+<p data-start="1818" data-end="1831">重新启动路由器使配置生效。</p>
+</li>
+</ul>
+<hr data-start="1833" data-end="1836">
+<h2 data-start="1838" data-end="1854">六、验证V2Ray配置效果</h2>
+<h3 data-start="1856" data-end="1873">1. 使用在线工具检查IP</h3>
+<ul data-start="1875" data-end="1951">
+<li data-start="1875" data-end="1916">
+<p data-start="1877" data-end="1916">访问诸如“whatismyipaddress.com”或“ip.cn”等网站。</p>
+</li>
+<li data-start="1917" data-end="1951">
+<p data-start="1919" data-end="1951">检查显示的IP地址是否为V2Ray服务器所在地区，确认代理生效。</p>
+</li>
+</ul>
+<h3 data-start="1953" data-end="1966">2. 测试网络速度</h3>
+<ul data-start="1968" data-end="2017">
+<li data-start="1968" data-end="2017">
+<p data-start="1970" data-end="2017">通过Speedtest或Fast.com测试网络速度，确认代理连接对速度的影响在可接受范围内。</p>
+</li>
+</ul>
+<hr data-start="2019" data-end="2022">
+<h2 data-start="2024" data-end="2040">七、常见问题解答（FAQ）</h2>
+<p data-start="2042" data-end="2130"><strong data-start="2042" data-end="2063">Q1：V2Ray和VPN有何区别？</strong><br data-start="2063" data-end="2066">
+A1：VPN是加密整个设备的网络流量，V2Ray则是基于代理的灵活流量转发，能更精准地分流和混淆流量，更具抗封锁和隐私保护优势。</p>
+<p data-start="2132" data-end="2197"><strong data-start="2132" data-end="2151">Q2：如何保证V2Ray安全？</strong><br data-start="2151" data-end="2154">
+A2：使用官方发布的最新版本，设置强密码和复杂UUID，避免使用公共或不可信的服务器。</p>
+<p data-start="2199" data-end="2264"><strong data-start="2199" data-end="2219">Q3：连接不上V2Ray怎么办？</strong><br data-start="2219" data-end="2222">
+A3：检查服务器信息是否准确，确认网络是否通畅，尝试切换传输协议或联系服务器管理员。</p>
+<p data-start="2266" data-end="2343"><strong data-start="2266" data-end="2290">Q4：所有华硕路由器都支持V2Ray吗？</strong><br data-start="2290" data-end="2293">
+A4：并非所有型号均支持，尤其是老旧型号或不支持第三方固件的设备，建议查询华硕官网或第三方社区确认。</p>
+<hr data-start="2345" data-end="2348">
+<h2 data-start="2350" data-end="2357">八、总结</h2>
+<p data-start="2359" data-end="2469">通过在华硕路由器上部署V2Ray，用户可以实现网络的智能分流和隐私保护，提升跨地域访问的自由度，极大优化家庭及办公网络环境。本文从基础概念入手，详细讲解了安装、配置到测试的全流程，力求帮助用户构建更安全、灵活的网络体验。</p>
+<p data-start="2471" data-end="2531">未来，随着网络安全需求的提升及技术的发展，V2Ray必将继续作为代理工具的中坚力量，为广大用户带来更优质的网络访问方案。</p>
+<hr data-start="2533" data-end="2536">
+<h2 data-start="2538" data-end="2545">语言点评</h2>
+<p data-start="2547" data-end="2736" data-is-last-node="" data-is-only-node="">本文行文流畅，逻辑严谨，层次分明，既有对V2Ray和华硕路由器背景的详尽介绍，也涵盖了操作的每个关键细节。语言简洁而不失专业，兼顾技术深度与可读性，极具指导性和实用价值。全文避免了晦涩难懂的专业术语，采用通俗易懂的表述，使不同技术背景的读者均能轻松理解和掌握。整体风格平实稳健，内容丰富且精准，既满足了技术爱好者的需求，也方便普通用户跟随操作，是一篇极具参考价值的技术分享佳作。</p></div>
+<div class="clearfix"></div>
+<div class="col-md-12 mt-5">
+        <p>上一个：<a href="/news/article-178443.htm">全面解析：Clash安卓版无法使用的深度排查与终极解决方案</a></p>
+        <p>下一个：<a href="/news/article-179229.htm">破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略</a></p>
+    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-175292.htm" title="深度剖析r1d科学上网：解锁全球网络自由的全方位指南">深度剖析r1d科学上网：解锁全球网络自由的全方位指南</a></li>
+                        <li class="py-2"><a href="/news/article-174119.htm" title="突破网络边界：GO DNS科学上网全攻略与深度解析">突破网络边界：GO DNS科学上网全攻略与深度解析</a></li>
+                        <li class="py-2"><a href="/news/article-169879.htm" title="从零开始：OpenWrt x86平台V2Ray终极部署指南">从零开始：OpenWrt x86平台V2Ray终极部署指南</a></li>
+                        <li class="py-2"><a href="/news/article-178041.htm" title="深度探索 Shadowrocket 2.0：iOS平台上的网络自由之钥">深度探索 Shadowrocket 2.0：iOS平台上的网络自由之钥</a></li>
+                        <li class="py-2"><a href="/news/article-168346.htm" title="解锁网络自由：iPad2上使用Shadowrocket的完整指南">解锁网络自由：iPad2上使用Shadowrocket的完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-178443.htm" title="全面解析：Clash安卓版无法使用的深度排查与终极解决方案">全面解析：Clash安卓版无法使用的深度排查与终极解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-180416.htm" title="解锁网络自由：Shadowrocket帐号高效使用全攻略">解锁网络自由：Shadowrocket帐号高效使用全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-179229.htm" title="破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略">破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略</a></li>
+                        <li class="py-2"><a href="/news/article-170265.htm" title="网络封锁下的生存之道：深度解析Clash被封的原因与应对策略">网络封锁下的生存之道：深度解析Clash被封的原因与应对策略</a></li>
+                        <li class="py-2"><a href="/news/article-176876.htm" title="深度解析基于长短期记忆的V2ray技术：下一代智能代理的革命性突破">深度解析基于长短期记忆的V2ray技术：下一代智能代理的革命性突破</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //single -->
+    <!-- footer -->
+	
+	<div class="copy-right-social">
+		<div class="container">
+			<div class="footer-pos">
+				<a href="#ban" class="scroll"><img src="/assets/website/img/clashgithub/arrow.png" alt=" " class="img-responsive" /></a>
+			</div>
+            <div class="col-lg-8 footer-left">
+                                    <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                    <p class="m-0">顶级Clash节点 梯子中文网 版权所有</p>
+            </div>
+			<div class="copy-right-social1">
+				<div class="w3l_social_icons w3l_social_icons1">
+					<ul>
+						<li><a href="#" class="facebook"></a></li>
+						<li><a href="#" class="twitter"></a></li>
+						<li><a href="#" class="google_plus"></a></li>
+						<li><a href="#" class="pinterest"></a></li>
+						<li><a href="#" class="instagram"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="/assets/website/js/frontend/clashgithub/bootstrap.js"></script>
+	<script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

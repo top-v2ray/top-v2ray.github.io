@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+    	<link rel="canonical" href="https://top-v2ray.github.io/news/article-179229.htm" />
+	<title>破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="/assets/website/img/clashgithub/favicon.ico" type="image/x-icon"/>
+		<meta name="description" content="在当前这个高度依赖网络的时代，网络代理工具的使用已成为不少用户的日常操作，其中 v2ray 凭借其高度灵活性、丰富的协议支持以及良好的伪装性，成为许多用户首选的科学上网工具。然而，随着人们对于“免流”" />
+	
+    <meta name="author" content="顶级Clash节点 梯子中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://top-v2ray.github.io/news/article-179229.htm" />
+    <meta property="og:site_name" content="顶级Clash节点 梯子中文网" />
+    <meta property="og:title" content="破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略" />
+    <meta property="og:image" content="https://top-v2ray.github.io/uploads/20240228/dcf34dc84fbab448f7946e41c45555d6.webp" />
+        <meta property="og:release_date" content="2025-11-18T08:52:30" />
+    <meta property="og:updated_time" content="2025-11-18T08:52:30" />
+        <meta property="og:description" content="在当前这个高度依赖网络的时代，网络代理工具的使用已成为不少用户的日常操作，其中 v2ray 凭借其高度灵活性、丰富的协议支持以及良好的伪装性，成为许多用户首选的科学上网工具。然而，随着人们对于“免流”" />
+    
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<link href="/assets/website/css/clashgithub/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/assets/website/css/clashgithub/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="/assets/website/css/G.css" />
+	<!-- js -->
+	<script type="text/javascript" src="/assets/website/js/frontend/clashgithub/jquery-2.1.4.min.js"></script>
+	<!-- //js -->
+	<link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSFHB0NNBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DSFHB0NNBK');
+</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- header -->
+	<div class="header" id="ban">
+		<div class="container">
+			<div class="w3ls_logo">
+								<a href="/">顶级V2ray节点 机场推荐</a>
+							</div>
+			<div class="header_right">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="link-effect-7" id="link-effect-7">
+						<ul class="nav navbar-nav">
+														<li><a href="/">首页</a></li>
+														<li><a href="/paid-subscribe/">推荐机场</a></li>
+														<li><a href="/news/">新闻资讯</a></li>
+														<li><a href="/client.htm">客户端</a></li>
+													</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <h1 style="word-break: break-all;">破解免流困境：深入剖析v2ray无法实现免流的原因与应对策略</h1>
+            <ul>
+                <li><a href="/">首页</a><i>|</i></li>
+                <li><a href="/news/">新闻资讯</a><i>|</i></li>
+                <li>正文</li>
+            </ul>
+        </div>
+    </div>
+    <!-- //about -->
+    <!-- single -->
+    <div class="single">
+        <div class="container">
+            <div class="col-md-9">
+                <input type="hidden" id="share-website-info" data-name="Clash Node免费节点站" data-url="https://clashnode.github.io">
+<div class="xcblog-blog-detail xcblog-blog-detail-defined">
+    
+<p data-start="34" data-end="232" class="">在当前这个高度依赖网络的时代，网络代理工具的使用已成为不少用户的日常操作，其中 v2ray 凭借其高度灵活性、丰富的协议支持以及良好的伪装性，成为许多用户首选的科学上网工具。然而，随着人们对于“免流”需求的增长，越来越多用户试图借助 v2ray 实现免流量访问，即在不消耗主套餐流量的情况下使用网络服务。但现实往往令人失望：v2ray 虽强，却无法轻松“免流”。这究竟是为什么？我们又该如何解决？</p>
+<p data-start="234" data-end="297" class="">本文将从多个维度深入分析v2ray无法免流的根本原因，解构配置逻辑，并提供切实可行的解决方案，帮助用户真正掌握免流的核心要义。</p>
+<hr data-start="299" data-end="302" class="" style="">
+<h2 data-start="304" data-end="328" class="">一、v2ray是什么？它与免流有什么关系？</h2>
+<h3 data-start="330" data-end="347" class="">1.1 工具本质与能力</h3>
+<p data-start="348" data-end="500" class="">v2ray 是一个基于Go语言开发的网络代理工具，支持多种代理协议（如VMess、VLESS、Shadowsocks、Socks、HTTP等），具有良好的加密、混淆与流量伪装功能。它本质上是一个中继服务，通过客户端和服务端协作，将用户的网络请求转发到中间节点，实现绕过审查、提升连接速度、隐藏IP等目的。</p>
+<h3 data-start="502" data-end="526" class="">1.2 v2ray 与免流之间的联系</h3>
+<p data-start="527" data-end="667" class="">“免流”，顾名思义，是指某些网络服务（例如特定视频平台、社交软件等）在运营商套餐内不计流量的访问方式。它通常依赖于特定的访问方式（例如目标IP、端口、HTTP头部特征），并与运营商的流量识别机制挂钩。理论上，v2ray具备将流量伪装成这些“特定服务”流量的能力，从而达到免流目的。</p>
+<p data-start="669" data-end="697" class="">然而，理论归理论，现实中能否免流还受到一系列变量的制约。</p>
+<hr data-start="699" data-end="702" class="" style="">
+<h2 data-start="704" data-end="726" class="">二、为什么v2ray常常无法实现免流？</h2>
+<h3 data-start="728" data-end="749" class="">2.1 运营商识别机制不断升级</h3>
+<p data-start="750" data-end="867" class="">现代运营商不再仅依靠IP段和端口来识别“免流应用”，而是借助**DPI（深度包检测）**等技术，从流量内容、协议行为等层面识别异常。v2ray 虽能伪装流量，但对DPI而言并非完全透明，尤其在免流场景下，容易因“行为不一致”而被识破。</p>
+<h3 data-start="869" data-end="889" class="">2.2 配置不当导致“误流”</h3>
+<p data-start="890" data-end="984" class="">v2ray配置繁复，尤其在伪装方面需要精细设置。若未正确指定HTTP头部、未使用合适端口、未搭配特定路径、未配置SNI域名等，运营商便能轻松识别该流量非“白名单服务”，从而计入套餐流量中。</p>
+<p data-start="986" data-end="995" class="">常见配置错误包括：</p>
+<ul data-start="996" data-end="1065">
+<li data-start="996" data-end="1024" class="" style="">
+<p data-start="998" data-end="1024" class="">忽略使用特定“host头”或“user-agent”</p>
+</li>
+<li data-start="1025" data-end="1045" class="" style="">
+<p data-start="1027" data-end="1045" class="">使用默认端口（如443）却无加密混淆</p>
+</li>
+<li data-start="1046" data-end="1065" class="" style="">
+<p data-start="1048" data-end="1065" class="">未使用运营商定向的白名单CDN节点</p>
+</li>
+</ul>
+<h3 data-start="1067" data-end="1085" class="">2.3 所选服务器不匹配</h3>
+<p data-start="1086" data-end="1145" class="">即使本地配置无误，若远程服务器响应方式不符合免流条件（如返回内容不符合白名单服务的格式），也会导致流量不被识别为免流。</p>
+<p data-start="1147" data-end="1192" class="">此外，部分服务器本身部署在非CDN或IP未被运营商标记为“免流资源”，自然也无法绕过识别。</p>
+<h3 data-start="1194" data-end="1214" class="">2.4 协议不合适或版本过老</h3>
+<p data-start="1215" data-end="1320" class="">v2ray支持多个协议，但并非所有协议都有良好的伪装能力。例如，VMess 协议虽然成熟，但与 VLESS+TLS+WS 组合相比，其可定制性和“表层模拟”能力稍差。使用旧协议或未启用TLS，极易被运营商过滤。</p>
+<hr data-start="1322" data-end="1325" class="" style="">
+<h2 data-start="1327" data-end="1355" class="">三、解决方案：让v2ray实现更接近“免流”的可能</h2>
+<h3 data-start="1357" data-end="1376" class="">3.1 选对协议与传输方式</h3>
+<p data-start="1377" data-end="1398" class="">当前比较主流且效果较好的免流组合方式包括：</p>
+<ul data-start="1399" data-end="1495">
+<li data-start="1399" data-end="1432" class="" style="">
+<p data-start="1401" data-end="1432" class=""><strong data-start="1401" data-end="1432">VLESS + TLS + WS（WebSocket）</strong></p>
+</li>
+<li data-start="1433" data-end="1468" class="" style="">
+<p data-start="1435" data-end="1468" class=""><strong data-start="1435" data-end="1468">VMess + TLS + HTTP伪装（需定制host）</strong></p>
+</li>
+<li data-start="1469" data-end="1495" class="" style="">
+<p data-start="1471" data-end="1495" class=""><strong data-start="1471" data-end="1495">VLESS + gRPC + CDN反代</strong></p>
+</li>
+</ul>
+<p data-start="1497" data-end="1543" class="">这些方案通过将流量伪装成访问常见网站（如百度、腾讯、阿里CDN资源）的方式，提升识别混淆度。</p>
+<h4 data-start="1545" data-end="1555" class="">配置重点：</h4>
+<ul data-start="1556" data-end="1652">
+<li data-start="1556" data-end="1600" class="" style="">
+<p data-start="1558" data-end="1600" class="">指定<code data-start="1560" data-end="1566">host</code>为运营商白名单域名（如v.qq.com、bilibili.com等）</p>
+</li>
+<li data-start="1601" data-end="1623" class="" style="">
+<p data-start="1603" data-end="1623" class="">指定<code data-start="1605" data-end="1611">path</code>为真实服务使用的路径格式</p>
+</li>
+<li data-start="1624" data-end="1652" class="" style="">
+<p data-start="1626" data-end="1652" class="">启用<code data-start="1628" data-end="1633">TLS</code>或<code data-start="1634" data-end="1640">XTLS</code>加密防止中间节点窥探内容</p>
+</li>
+</ul>
+<h3 data-start="1654" data-end="1681" class="">3.2 使用定制DNS与FakeSNI技术</h3>
+<p data-start="1682" data-end="1788" class="">为了提升免流成功率，可以采用 Fake SNI 配合 DNS-over-HTTPS（DoH）技术，实现请求头与主机名解耦。这样，即使真实的目标服务器与SNI域名不同，也能误导运营商认为你在访问“允许免流”的服务。</p>
+<p data-start="1790" data-end="1829" class="">工具参考：<code data-start="1795" data-end="1806">tun2socks</code> + <code data-start="1809" data-end="1816">clash</code> + <code data-start="1819" data-end="1829">自定义DNS跳转</code></p>
+<h3 data-start="1831" data-end="1850" class="">3.3 关注社区与脚本资源</h3>
+<p data-start="1851" data-end="1940" class="">在 GitHub、Telegram、QQ技术群、酷安等平台，有许多热心用户分享<strong data-start="1890" data-end="1904">免流专用节点配置脚本</strong>或<strong data-start="1905" data-end="1915">成功案例模板</strong>。新手用户建议从这些模板入手，再根据实际情况调整。</p>
+<p data-start="1942" data-end="1947" class="">推荐资源：</p>
+<ul data-start="1948" data-end="2087">
+<li data-start="1948" data-end="2016" class="" style="">
+<p data-start="1950" data-end="2016" class="">GitHub项目：<a data-start="1959" data-end="2016" rel="noopener" target="_new" class="" href="https://github.com/search?q=v2ray+freeflow">v2ray免流配置合集</a></p>
+</li>
+<li data-start="2017" data-end="2050" class="" style="">
+<p data-start="2019" data-end="2050" class="">Telegram群组：v2ray免流讨论区（需要科学方式加入）</p>
+</li>
+<li data-start="2051" data-end="2087" class="" style="">
+<p data-start="2053" data-end="2087" class="">Clash订阅转换工具：Subconverter + 自定义模板规则</p>
+</li>
+</ul>
+<h3 data-start="2089" data-end="2108" class="">3.4 定期测试并更换节点</h3>
+<p data-start="2109" data-end="2146" class="">免流策略并非一成不变。运营商常在不同时间段启用不同识别规则，因此建议用户：</p>
+<ul data-start="2147" data-end="2204">
+<li data-start="2147" data-end="2171" class="" style="">
+<p data-start="2149" data-end="2171" class="">保持多个节点配置（不同CDN源、端口、协议）</p>
+</li>
+<li data-start="2172" data-end="2190" class="" style="">
+<p data-start="2174" data-end="2190" class="">使用测速脚本检测是否“计入流量”</p>
+</li>
+<li data-start="2191" data-end="2204" class="" style="">
+<p data-start="2193" data-end="2204" class="">遇到失效及时切换或更新</p>
+</li>
+</ul>
+<hr data-start="2206" data-end="2209" class="" style="">
+<h2 data-start="2211" data-end="2227" class="">四、常见问题解答（FAQ）</h2>
+<h3 data-start="2229" data-end="2251" class="">Q1：v2ray原生支持免流吗？</h3>
+<p data-start="2252" data-end="2310" class="">答：v2ray 并非为免流设计，原生不保证免流效果。要实现免流必须依赖<strong data-start="2287" data-end="2297">特定配置技巧</strong>与<strong data-start="2298" data-end="2309">运营商策略空隙</strong>。</p>
+<h3 data-start="2312" data-end="2344" class="">Q2：我的配置看起来没问题，但仍然消耗流量，为什么？</h3>
+<p data-start="2345" data-end="2356" class="">答：可能存在以下原因：</p>
+<ul data-start="2357" data-end="2411">
+<li data-start="2357" data-end="2373" class="" style="">
+<p data-start="2359" data-end="2373" class="">服务端响应内容与白名单不一致</p>
+</li>
+<li data-start="2374" data-end="2392" class="" style="">
+<p data-start="2376" data-end="2392" class="">使用了错误的DNS或未启用DoH</p>
+</li>
+<li data-start="2393" data-end="2411" class="" style="">
+<p data-start="2395" data-end="2411" class="">运营商识别机制升级，旧配置已失效</p>
+</li>
+</ul>
+<p data-start="2413" data-end="2436" class="">建议重新验证Host、SNI、端口及返回内容。</p>
+<h3 data-start="2438" data-end="2457" class="">Q3：哪些运营商支持免流？</h3>
+<p data-start="2458" data-end="2528" class="">答：目前国内部分地区的联通、电信对腾讯、百度、阿里等CDN访问流量具备“白名单策略”，但不对外公开，免流成功高度依赖地域、套餐类型与时间段。</p>
+<hr data-start="2530" data-end="2533" class="" style="">
+<h2 data-start="2535" data-end="2557" class="">结语：免流不是玄学，是技术与策略的结合</h2>
+<p data-start="2559" data-end="2670" class="">v2ray 作为代理工具，在实现网络访问自由化方面已展现巨大潜力，但其能否真正实现“免流”，取决于对网络原理的深刻理解与对运营商识别机制的灵活应对。它不是一键开启的“魔法”，而是一门需要持续学习、实践和调试的“技术艺术”。</p>
+<p data-start="2672" data-end="2738" class="">对普通用户而言，也许无法永远“白嫖”，但通过本文的方法论和配置技巧，至少可以在一定时间内体验“免流快感”，把流量用在真正想用的地方。</p>
+<hr data-start="2740" data-end="2743" class="" style="">
+<h3 data-start="2745" data-end="2752" class="">点评：</h3>
+<p data-start="2754" data-end="2912" class="">这篇文章并非一味地宣扬“v2ray万能”，而是基于真实用户需求，冷静剖析其在免流实践中的不足与限制，再通过逻辑严密的结构，系统性地引导用户识别问题、分析症结、尝试解决，堪称是“技术普及与实战指导”结合的典范。文章语言平实中透着力量，既满足初学者入门，又给予进阶用户优化启示，是一篇兼具深度与实用性的网络工具实战手册。</p></div>
+<div class="clearfix"></div>
+<div class="col-md-12 mt-5">
+        <p>上一个：<a href="/news/article-178829.htm">华硕路由器上V2Ray配置全攻略：安全上网的实用指南</a></p>
+        <p>下一个：<a href="/news/article-179601.htm">破解手机v2rayng连接成功却无法上网的疑难杂症：全面解决方案详解</a></p>
+    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-170265.htm" title="网络封锁下的生存之道：深度解析Clash被封的原因与应对策略">网络封锁下的生存之道：深度解析Clash被封的原因与应对策略</a></li>
+                        <li class="py-2"><a href="/news/article-176091.htm" title="解锁网络自由：v2rayng安卓订阅地址全面配置指南">解锁网络自由：v2rayng安卓订阅地址全面配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-176484.htm" title="iOS设备科学上网全攻略：2018年最佳实践与深度解析">iOS设备科学上网全攻略：2018年最佳实践与深度解析</a></li>
+                        <li class="py-2"><a href="/news/article-178041.htm" title="深度探索 Shadowrocket 2.0：iOS平台上的网络自由之钥">深度探索 Shadowrocket 2.0：iOS平台上的网络自由之钥</a></li>
+                        <li class="py-2"><a href="/news/article-180815.htm" title="SSR酸酸乳科学上网全攻略：从入门到精通的完整指南">SSR酸酸乳科学上网全攻略：从入门到精通的完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-178443.htm" title="全面解析：Clash安卓版无法使用的深度排查与终极解决方案">全面解析：Clash安卓版无法使用的深度排查与终极解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-176876.htm" title="深度解析基于长短期记忆的V2ray技术：下一代智能代理的革命性突破">深度解析基于长短期记忆的V2ray技术：下一代智能代理的革命性突破</a></li>
+                        <li class="py-2"><a href="/news/article-172971.htm" title="小米电视解锁全球内容：科学上网全攻略与深度体验">小米电视解锁全球内容：科学上网全攻略与深度体验</a></li>
+                        <li class="py-2"><a href="/news/article-171046.htm" title="Quantumult服务器添加全攻略：从入门到精通的高效配置指南">Quantumult服务器添加全攻略：从入门到精通的高效配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-170650.htm" title="安卓Clash最新版本全面解析：从入门到精通的完整指南">安卓Clash最新版本全面解析：从入门到精通的完整指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //single -->
+    <!-- footer -->
+	
+	<div class="copy-right-social">
+		<div class="container">
+			<div class="footer-pos">
+				<a href="#ban" class="scroll"><img src="/assets/website/img/clashgithub/arrow.png" alt=" " class="img-responsive" /></a>
+			</div>
+            <div class="col-lg-8 footer-left">
+                                    <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                    <p class="m-0">顶级Clash节点 梯子中文网 版权所有</p>
+            </div>
+			<div class="copy-right-social1">
+				<div class="w3l_social_icons w3l_social_icons1">
+					<ul>
+						<li><a href="#" class="facebook"></a></li>
+						<li><a href="#" class="twitter"></a></li>
+						<li><a href="#" class="google_plus"></a></li>
+						<li><a href="#" class="pinterest"></a></li>
+						<li><a href="#" class="instagram"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="/assets/website/js/frontend/clashgithub/bootstrap.js"></script>
+	<script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
