@@ -256,9 +256,9 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 gRPC 传输方式有哪些优势？</h5></div>
+    <div class="panel-heading"><h5>WinXray 的 PAC 模式适合哪些使用场景？</h5></div>
     <div class="panel-body">
-        V2Ray gRPC 传输支持多路复用和长连接，减少握手次数。它对高延迟网络和移动网络非常友好，同时可通过 TLS 加密保护数据，提高隐蔽性和稳定性。<hr />    </div>
+        PAC 模式可根据规则文件动态判断流量是否走代理。适合访问国内外混合网站环境，无需手动切换节点，程序自动分流，提高网络访问效率和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan-Go 的多路复用（mux）如何开启？</h5></div>
@@ -266,24 +266,9 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
         Trojan-Go 在配置文件中通过启用 mux 参数即可实现多路复用。此功能允许多个连接共享同一隧道，减少握手延迟并提升整体传输效率，尤其在移动网络中表现出色。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅失败如何解决？</h5></div>
+    <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
     <div class="panel-body">
-        确认订阅 URL 是否有效并检查网络通畅。可手动刷新或重新添加订阅链接，保证节点列表最新。结合策略组使用，可确保稳定科学上网体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的 PAC 模式适合哪些使用场景？</h5></div>
-    <div class="panel-body">
-        PAC 模式可根据规则文件动态判断流量是否走代理。适合访问国内外混合网站环境，无需手动切换节点，程序自动分流，提高网络访问效率和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 为什么在 iOS 上广受欢迎？</h5></div>
-    <div class="panel-body">
-        Potatso Lite 是一款操作简洁的代理工具，支持多种代理协议和自定义规则。它适合不需要复杂配置的用户，界面友好、性能稳定，非常适合日常轻量使用和应用代理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 可以在哪些平台使用？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 是一款 iOS 平台专用代理客户端，支持多种协议如 Vmess、Shadowsocks、Trojan 等。用户可通过导入订阅链接快速配置节点，配合规则分流功能实现精准网络代理。由于其强大功能，它是 iPhone 用户常用的科学上网工具。<hr />    </div>
+        伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的端口复用有什么风险？</h5></div>
@@ -296,9 +281,24 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
         管理员可以为每个用户设置上传和下载带宽以及总流量上限。超出限制可自动降速或阻止访问，保证服务器资源合理分配，提高整体网络公平性和用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的 gRPC 传输方式有哪些优势？</h5></div>
     <div class="panel-body">
-        伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
+        V2Ray gRPC 传输支持多路复用和长连接，减少握手次数。它对高延迟网络和移动网络非常友好，同时可通过 TLS 加密保护数据，提高隐蔽性和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 为什么在 iOS 上广受欢迎？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 是一款操作简洁的代理工具，支持多种代理协议和自定义规则。它适合不需要复杂配置的用户，界面友好、性能稳定，非常适合日常轻量使用和应用代理。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 可以在哪些平台使用？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 是一款 iOS 平台专用代理客户端，支持多种协议如 Vmess、Shadowsocks、Trojan 等。用户可通过导入订阅链接快速配置节点，配合规则分流功能实现精准网络代理。由于其强大功能，它是 iPhone 用户常用的科学上网工具。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅失败如何解决？</h5></div>
+    <div class="panel-body">
+        确认订阅 URL 是否有效并检查网络通畅。可手动刷新或重新添加订阅链接，保证节点列表最新。结合策略组使用，可确保稳定科学上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan TLS 如何避免被 DPI 检测？</h5></div>
@@ -333,11 +333,11 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
     <div class="panel-body">
         <div class="row">
             <div class="text-center">
-                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">
+                <a href="javascript:;" class="js_to" data-url="https://xc1.luniu8.com/?code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">
                     <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
                 </a>
                 <dl>
-                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></dt>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://xc1.luniu8.com/?code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></dt>
                     <dd>
                         <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
                 </dl>
@@ -351,16 +351,16 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-10-13.htm" title="顶级V2ray节点 | 10月13日20.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月13日20.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-1.htm" title="顶级V2ray节点 | 10月1日22.4M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月1日22.4M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-29.htm" title="顶级V2ray节点 | 9月29日19.7M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月29日19.7M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-9-25.htm" title="顶级V2ray节点 | 9月25日19M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月25日19M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-22-clash-node.htm" title="顶级V2ray节点 | 9月22日21.8M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月22日21.8M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-10-5.htm" title="顶级V2ray节点 | 10月5日19.8M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月5日19.8M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-24-free-v2ray.htm" title="顶级V2ray节点 | 10月24日19.6M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月24日19.6M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-node.htm" title="顶级V2ray节点 | 9月12日21.7M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月12日21.7M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-20-free-clash.htm" title="顶级V2ray节点 | 10月20日21.2M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月20日21.2M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-9-17.htm" title="顶级V2ray节点 | 9月17日19.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月17日19.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-free-v2ray.htm" title="顶级V2ray节点 | 9月2日18.6M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月2日18.6M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-9-9.htm" title="顶级V2ray节点 | 9月9日18.4M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月9日18.4M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-30-node-share.htm" title="顶级V2ray节点 | 9月30日19.9M/S|免费Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月30日19.9M/S|免费Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-27.htm" title="顶级V2ray节点 | 9月27日19.3M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月27日19.3M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-node-share.htm" title="顶级V2ray节点 | 9月18日22.7M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月18日22.7M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-10-25.htm" title="顶级V2ray节点 | 10月25日18.9M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月25日18.9M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-10-23.htm" title="顶级V2ray节点 | 10月23日20.2M/S|免费Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 10月23日20.2M/S|免费Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-20-clash-node.htm" title="顶级V2ray节点 | 9月20日21M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月20日21M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-9-23.htm" title="顶级V2ray节点 | 9月23日18.7M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">顶级V2ray节点 | 9月23日18.7M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -372,7 +372,7 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
@@ -405,7 +405,7 @@ Telegram群组、微博和相关论坛常有用户分享和推荐节点信息，
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://xc1.luniu8.com/?code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
                                     <p class="m-0">顶级Clash节点 梯子中文网 版权所有</p>
             </div>
 			<div class="copy-right-social1">
